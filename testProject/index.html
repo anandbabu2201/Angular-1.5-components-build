@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html ng-app="app" ng-controller="myCtrl as $ctrls">
+
+<head>
+    <base href="/">
+    <title>Test</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+
+    <!-- Scripts And CSS-->
+    <!--bootstrap css-->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <!--Angularjs-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-route.js"></script>
+    <script src="app.js"></script>
+    <!--Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <!--bootstrap js-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--Font-Awesome CSS-->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!--Services-->
+
+
+    <!--Scripts-->
+    <script src="components/testComponent.js"></script>
+
+</head>
+
+<body>
+    <!-- <div style="width: 25%;float:left;height: 100vh">boooooooooooooooo</div> -->
+    <div ><test-component model="$ctrls.image_data" data="$ctrls.count"></test-component></div>
+    
+</body>
+<style>
+    body {
+        font-family: 'Open Sans', sans-serif;
+    }
+</style>
+
+</html>

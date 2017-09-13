@@ -1,0 +1,89 @@
+
+<input type="text" ng-model="$ctrl.data"></input>
+<button ng-disabled="($ctrl.arr.length>=15)" type="text" type="button" ng-click="$ctrl.increament()">+</button>
+<button ng-disabled=($ctrl.data<=0) type="text" type="button" ng-click="$ctrl.decreament()">-</button>
+<div class="container">
+    <div class="row">
+        <div class="item-browser">
+            <div class="col-xs-12 col-xs-offset-0 col-sm-4 col-md-3 col-lg-2 col-xl-1 img-adjust" ng-repeat="x in $ctrl.arr track by $index">
+                <a href="#">
+                        <img class="img-responsive" ng-src="{{$ctrl.model.url}}"  alt="No Image">
+                    <h4>{{$ctrl.model.img_name}}</h4>   
+                </a>
+            </div>
+        </div>
+    </div>  
+</div>
+
+<style>
+    .item-browser {
+        text-align: center;
+    }
+    .item-browser a {
+        text-decoration: none;
+        text-decoration-style: none;
+    }
+    .item-browser a:hover {
+        text-decoration: none;
+        text-decoration-style: none;
+    }
+    .item-browser img{
+        border:1px solid #e8ebef; 
+    }
+    .item-browser img:hover {
+        opacity: 0.8;
+        border:1px solid #e8ebef;
+    }
+   
+@media only screen and (max-width: 500px)
+{
+    .img-adjust {
+        width: 100%;
+        text-align: center;
+
+    }
+}
+@media only screen and (min-width: 500px) and (max-width:760px)
+{
+    .img-adjust{
+        width: 50%;
+        text-align: center;
+
+    }
+}
+@media only screen and (min-width: 760px) and (max-width:900px)
+{
+    .img-adjust{
+        width: 33%;
+        text-align: center;
+
+    }
+}
+@media only screen and  (min-width:900px) and (max-width:1100px)
+{
+    .img-adjust{
+        width: 25%;
+        text-align: center;
+
+    }
+}
+@media only screen and  (min-width:1100px) and (max-width:1200px)
+{
+    .img-adjust{
+        width: 20%;
+        text-align: center;
+
+    }
+}
+button[disabled] {
+    opacity: 0.65; 
+    cursor: not-allowed;
+}
+
+@media all and (orientation: landscape) { 
+
+  }
+  @media all and (orientation:portrait) {
+
+  }
+</style>

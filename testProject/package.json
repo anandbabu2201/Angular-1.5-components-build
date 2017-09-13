@@ -1,0 +1,15 @@
+{
+  "name": "testproject",
+  "version": "1.0.0",
+  "description": "test 1.5 components",
+  "main": "app.js",
+  "scripts": {
+    "test": "test",
+    "start": "lite-server"
+  },
+  "author": "Anand Babu",
+  "license": "ISC",
+  "dependencies": {
+    "lite-server": "^2.3.0"
+  }
+}
